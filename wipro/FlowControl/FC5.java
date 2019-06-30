@@ -1,21 +1,18 @@
-import java.util.Scanner;
-
 public class FC5
 {
     public static void main(String[] args) {
-        int arr[] = {1,4,34,56,7};
-        Scanner scan = new Scanner(System.in);
-        int src = scan.nextInt();
-        int index = -1;
-        for(int i = 0; i < arr.length; i++)
+        char a = 'a';
+        if(a < 90 && a > 64 || a <123 && a > 96)
         {
-            if(src == arr[i])
-            {
-                index = i;
-                break;
-            }
+            System.out.println("Alphabatic");
         }
-        System.out.println(index);
-        scan.close();
+        else if(a < 58 && a > 47)
+        {
+            System.out.println("Digit");
+        }
+        else
+        {
+            System.out.println("Special Character");
+        }
     }
 }
